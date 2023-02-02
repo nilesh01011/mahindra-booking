@@ -233,7 +233,7 @@ function Index() {
                                 }
                             </div>
                             {/* cars images */}
-                            <div className="1x1:w-[460px] xl:w-[380px] sm:w-[400px] w-[280px] mx-auto 1x1:h-[343px] sm:h-[280px] h-[187px] mt-[5px]">
+                            <div className="1x1:w-[460px] xl:w-[380px] sm:w-[400px] w-[280px] mx-auto 1x1:h-[343px] sm:h-[280px] h-[187px] md:mt-0 mt-[5px]">
                                 {
                                     carImages &&
                                     <Image width={280} height={280} src={carImages && carImages} alt="product-img" className='w-full h-full object-contain' />
