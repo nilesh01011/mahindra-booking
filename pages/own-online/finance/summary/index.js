@@ -33,7 +33,7 @@ function Index() {
     // car details
     const [cardDetails, setCardDetails] = useState([]);
     // user data details
-    const [userDetails, setUserDetails] = useState([]);
+    // const [userDetails, setUserDetails] = useState([]);
 
     const router = useRouter();
 
@@ -45,7 +45,7 @@ function Index() {
             router.push('/');
         } else {
             setCardDetails(JSON.parse(getCardDetails));
-            setUserDetails(JSON.parse(getUserData));
+            // setUserDetails(JSON.parse(getUserData));
         }
 
     }, [router])
@@ -66,7 +66,7 @@ function Index() {
     // contents box
     const [showContents, setShowContents] = useState(false);
 
-    // icons
+    // Customise Your Quote icons
     const financeIcons =
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="25" viewBox="0 0 28 25" fill="none">
             <path fillRule="evenodd" clipRule="evenodd" d="M10.5603 3.89312L10.074 2.04518L7.15615 3.89312H10.5603ZM11.5702 1.05093L12.159 3.28825L16.88 0.298266C17.6086 -0.163215 18.5757 0.216835 18.7952 1.05093L19.5431 3.89312H21.2254C22.8684 3.89312 24.2004 5.22507 24.2004 6.86812V10.6931H25.9004C26.8393 10.6931 27.6004 11.4542 27.6004 12.3931V15.7931C27.6004 16.732 26.8393 17.4931 25.9004 17.4931H24.2004V21.3181C24.2004 22.9612 22.8684 24.2931 21.2254 24.2931H3.37539C1.73234 24.2931 0.400391 22.9612 0.400391 21.3181V6.86812C0.400391 5.22507 1.73234 3.89312 3.37539 3.89312H3.97889L9.65497 0.298266C10.3836 -0.163215 11.3507 0.216835 11.5702 1.05093ZM17.299 2.04518L17.7853 3.89312H14.3812L17.299 2.04518ZM22.5004 6.86812V10.6931H20.8004C18.9226 10.6931 17.4004 12.2153 17.4004 14.0931C17.4004 15.9709 18.9226 17.4931 20.8004 17.4931H22.5004V21.3181C22.5004 22.0223 21.9296 22.5931 21.2254 22.5931H3.37539C2.67123 22.5931 2.10039 22.0223 2.10039 21.3181V6.86812C2.10039 6.16395 2.67123 5.59312 3.37539 5.59312H21.2254C21.9296 5.59312 22.5004 6.16395 22.5004 6.86812ZM25.9004 12.3931H20.8004C19.8615 12.3931 19.1004 13.1542 19.1004 14.0931C19.1004 15.032 19.8615 15.7931 20.8004 15.7931H25.9004V12.3931ZM20.8004 14.9431C21.2698 14.9431 21.6504 14.5626 21.6504 14.0931C21.6504 13.6237 21.2698 13.2431 20.8004 13.2431C20.3309 13.2431 19.9504 13.6237 19.9504 14.0931C19.9504 14.5626 20.3309 14.9431 20.8004 14.9431Z" fill={`${theme === "dark" ? 'white' : 'black'}`} />
@@ -125,9 +125,8 @@ function Index() {
         setSuccessfull(true);
     }
 
-    const successfullImg = '/Congratulations.gif';
+    const lightSuccessfullImg = '/Congratulations.gif';
     const darkSuccessfullImg = '/Congratulations.gif';
-    // const darkSuccessfullImg = '/CongratulationsLight.svg'
 
     return (
         <>
@@ -146,21 +145,21 @@ function Index() {
                     successfull === true ? (
                         <div className='w-full h-max flex gap-[8px] items-center'>
                             {/* images */}
-                            <div className='h-[52px]'>
+                            <div className='md:h-[52px] h-[50px] w-[54px] overflow-hidden'>
 
-                                <Image height={54} width={54} className="w-full h-full object-contain scale-[1.2]" src={theme === "dark" ? successfullImg : darkSuccessfullImg} alt="successfull-buying" />
+                                <Image height={52} width={54} className={`w-full h-full object-contain ${theme === "dark" ? '' : ''}`} src={theme === "dark" ? darkSuccessfullImg : lightSuccessfullImg} alt="successfull-buying" />
 
                             </div>
                             {/* user names */}
-                            <div className=''>
+                            <div className='w-max'>
                                 {
                                     getUserDetails.map((ele) => {
 
-                                        const userName = ele.userName.split(' ', 1)
+                                        const userName = ele.userName.split(' ', 1);
 
                                         return (
-                                            <h1 key={ele.id} className={`${theme === "dark" ? 'text-white' : 'text-[#0B0B0C]'} md:text-[26px] text-[22px] font-bold capitalize`}>
-                                                Hi {userName ? userName : 'your name'}. Congratulations!
+                                            <h1 key={ele.id} className={`${theme === "dark" ? 'text-white' : 'text-[#0B0B0C]'} md:text-[26px] xss:text-[22px] text-[20px] font-bold capitalize`}>
+                                                Hi {ele.userName === "" ? 'Ashish' : userName}. Congratulations!
                                             </h1>
                                         )
                                     })
@@ -171,14 +170,14 @@ function Index() {
                             </div>
                         </div>
                     ) : (
-                        <div className='w-full h-[37px] flex justify-center'>
+                        <div className='w-full h-[30px] flex justify-center'>
                             <Steppers theme={theme} Steps={3} />
                         </div>
                     )
                 }
                 {/* main cars details */}
 
-                <div className={`w-full h-full ${successfull === true ? 'mt-[25px]' : '1x1:mt-[45px] mt-[25px]'}`}>
+                <div className={`w-full h-full ${successfull === true ? 'xss:mt-[15px] mt-[6px]' : 'md:mt-[40px] mt-[25px]'}`}>
                     {/* cars dealer selections */}
                     <div className='w-full h-full flex xl:flex-row flex-col xl:gap-[20px] gap-[10px] mb-[70px]'>
                         {/* left sides */}
@@ -186,7 +185,7 @@ function Index() {
                             {/* cars title */}
                             <div className="w-full pb-[10px]">
                                 {/* title */}
-                                <h2 className={`${theme === "dark" ? 'text-white' : 'text-black'} md:text-[24px] text-[20px] font-bold uppercase`}>{cardDetails.title}</h2>
+                                <h2 className={`${theme === "dark" ? 'text-white' : 'text-black'} md:text-[24px] text-[20px] font-[800] uppercase`}>{cardDetails.title}</h2>
                                 {/* subtitle */}
                                 <ul className='flex items-center justify-start flex-wrap sm:gap-x-[8px] gap-x-[6px]'>
 
@@ -469,7 +468,7 @@ function Index() {
                         {/* end buttons */}
                         {/* disabled={successfull === true ? true : null} */}
                         {/* ${successfull === true ? 'opacity-[0.6]' : 'opacity-1'} */}
-                        <button onClick={() => handleSubmits()} type="button" className={`sm:text-[16px] text-[15px] relative z-[5] capitalize xl:w-[157px] md:w-[150px] w-[120px] h-full before:content-[""] before:absolute before:left-0 before:right-0 before:bottom-0 before:top-0 before:md:w-[157px] before:w-[122px] before:h-[44px] before:border-[1px] hover:text-white text-white before:bg-[#ff3e5b] before:border-[#ff3e5b] before:z-[-1] after:content-[""] after:absolute after:right-[-10px] after:bottom-0 after:top-0 after:bg-[#ff3e5b] after:w-[2px] after:h-full font-bold
+                        <button onClick={() => handleSubmits()} type="button" className={`sm:text-[16px] text-[15px] relative z-[5] capitalize xl:w-[157px] w-[150px] h-full before:content-[""] before:absolute before:left-0 before:right-0 before:bottom-0 before:top-0 before:w-[157px] before:h-[44px] before:border-[1px] hover:text-white text-white before:bg-[#ff3e5b] before:border-[#ff3e5b] before:z-[-1] after:content-[""] after:absolute after:xl:right-[-10px] after:right-[-15px] after:bottom-0 after:top-0 after:bg-[#ff3e5b] after:w-[2px] after:h-full font-bold
                         `}
                         >
                             {successfull === true ? 'Go to My Bookings' : ' Pay ₹21 000.00'}

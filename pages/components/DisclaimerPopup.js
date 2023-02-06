@@ -40,7 +40,7 @@ function DisclaimerPopup({ theme }) {
                     <div onClick={() => handleClose()} className='z-50 w-full h-full fixed left-0 right-0 top-0 bottom-0 bg-[#0B0B0C] opacity-[0.9]'></div>
                     {/* select place menu content */}
                     <div className={`${isOpen ? 'opacity-1' : 'opacity-0'} transition-opacity w-full h-full flex items-center justify-center`}>
-                        <div className={`z-[100] sm:w-[500px] w-[340px] h-[291px] ${theme === "dark" ? 'bg-[#212121]' : 'bg-white'} rounded-[20px] p-[20px] border-[1px] border-white relative  overflow-hidden`}>
+                        <div className={`z-[100] sm:w-[500px] w-[340px] h-[291px] ${theme === "dark" ? 'bg-[#212121]' : 'bg-white'} rounded-[20px] p-[20px] relative  overflow-hidden`}>
                             {/* title */}
                             <div className='w-full flex items-center justify-between mb-[10px]'>
                                 <h2 className={`${theme === "dark" ? 'text-white' : 'text-black'} font-black`}>Disclaimer</h2>

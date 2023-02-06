@@ -96,6 +96,16 @@ export const TabsList = [
                         ]
                     },
                 ],
+                chooseSeaters: [
+                    {
+                        id: 1,
+                        types: "5 Seater"
+                    },
+                    {
+                        id: 2,
+                        types: "7 Seater"
+                    }
+                ],
                 dealer: [
                     {
                         id: 1,
@@ -120,6 +130,26 @@ export const TabsList = [
                         shopName: 'Nbs International Ltd.',
                         shopPinCode: 'ANDHERI, 400058',
                         shopAddress: 'Standford, Sv Road, Juhu Tara Lane, Near Shoppers Stop, Andheri West Mumbai 400058'
+                    }
+                ],
+                choosePetrolDiesel: [
+                    {
+                        id: 1,
+                        types: "petrol"
+                    },
+                    {
+                        id: 2,
+                        types: "diesel"
+                    }
+                ],
+                chooseTransmission: [
+                    {
+                        id: 1,
+                        types: "manual"
+                    },
+                    {
+                        id: 2,
+                        types: "Automatic"
                     }
                 ],
                 dealerSelectedId: 0,
@@ -230,6 +260,30 @@ export const TabsList = [
                         ]
                     },
                 ],
+                chooseSeaters: [
+                    {
+                        id: 1,
+                        types: "5 Seater"
+                    },
+                    {
+                        id: 2,
+                        types: "6 Seater"
+                    },
+                    {
+                        id: 3,
+                        types: "7 Seater"
+                    }
+                ],
+                choosePetrolDiesel: [
+                    {
+                        id: 1,
+                        types: "petrol"
+                    },
+                    {
+                        id: 2,
+                        types: "diesel"
+                    }
+                ],
                 dealer: [
                     {
                         id: 1,
@@ -266,6 +320,16 @@ export const TabsList = [
                         shopName: 'Randhawa Motors (A Div Of Randhawa Automobile Engineering Pvt Ltd).',
                         shopPinCode: 'VIKHROLI, 400079',
                         shopAddress: 'Gr. Floor, Jaswant Landmark, Mehra Compound, Lbs Marg Mumbai 400079'
+                    }
+                ],
+                chooseTransmission: [
+                    {
+                        id: 1,
+                        types: "manual"
+                    },
+                    {
+                        id: 2,
+                        types: "Automatic"
                     }
                 ],
                 dealerSelectedId: 0,
@@ -390,6 +454,26 @@ export const TabsList = [
                         ]
                     },
                 ],
+                choosePetrolDiesel: [
+                    {
+                        id: 1,
+                        types: "petrol"
+                    },
+                    {
+                        id: 2,
+                        types: "diesel"
+                    }
+                ],
+                chooseSeaters: [
+                    {
+                        id: 1,
+                        types: "5 Seater"
+                    },
+                    {
+                        id: 2,
+                        types: "7 Seater"
+                    }
+                ],
                 dealer: [
                     {
                         id: 1,
@@ -426,6 +510,16 @@ export const TabsList = [
                         shopName: 'Randhawa Motors (A Div Of Randhawa Automobile Engineering Pvt Ltd).',
                         shopPinCode: 'VIKHROLI, 400079',
                         shopAddress: 'Gr. Floor, Jaswant Landmark, Mehra Compound, Lbs Marg Mumbai 400079'
+                    }
+                ],
+                chooseTransmission: [
+                    {
+                        id: 1,
+                        types: "manual"
+                    },
+                    {
+                        id: 2,
+                        types: "Automatic"
                     }
                 ],
                 dealerSelectedId: 0,
@@ -473,6 +567,26 @@ export const TabsList = [
                         color: 'pearl white',
                         colorCode: '#f3f3f3'
                     },
+                ],
+                chooseSeaters: [
+                    {
+                        id: 1,
+                        types: "5 Seater"
+                    },
+                    {
+                        id: 2,
+                        types: "7 Seater"
+                    }
+                ],
+                choosePetrolDiesel: [
+                    {
+                        id: 1,
+                        types: "petrol"
+                    },
+                    {
+                        id: 2,
+                        types: "diesel"
+                    }
                 ],
                 chooseVariant: [
                     {
@@ -532,6 +646,16 @@ export const TabsList = [
                         shopName: 'Nbs International Ltd.',
                         shopPinCode: 'CHOWPATTY, 400004',
                         shopAddress: '10, Stone Building, Opp. Girgaon Chowpatty Mumbai 400004'
+                    }
+                ],
+                chooseTransmission: [
+                    {
+                        id: 1,
+                        types: "manual"
+                    },
+                    {
+                        id: 2,
+                        types: "Automatic"
                     }
                 ],
                 dealerSelectedId: 0,
@@ -690,6 +814,26 @@ export const TabsList = [
                         ]
                     },
                 ],
+                choosePetrolDiesel: [
+                    {
+                        id: 1,
+                        types: "petrol"
+                    },
+                    {
+                        id: 2,
+                        types: "diesel"
+                    }
+                ],
+                chooseSeaters: [
+                    {
+                        id: 1,
+                        types: "5 Seater"
+                    },
+                    {
+                        id: 2,
+                        types: "7 Seater"
+                    }
+                ],
                 dealer: [
                     {
                         id: 1,
@@ -702,6 +846,16 @@ export const TabsList = [
                         shopName: 'Nbs International Ltd.',
                         shopPinCode: 'KANDIVALI_SH, 400067',
                         shopAddress: 'Shop No B-1 Giriraj Heights, New Link Rd, Near Symphony-B, B.I.G.D, Kandivali West Mumbai 400067'
+                    }
+                ],
+                chooseTransmission: [
+                    {
+                        id: 1,
+                        types: "manual"
+                    },
+                    {
+                        id: 2,
+                        types: "Automatic"
                     }
                 ],
                 dealerSelectedId: 0,
@@ -854,6 +1008,36 @@ export const TabsList = [
                         ]
                     },
                 ],
+                chooseSeaters: [
+                    {
+                        id: 1,
+                        types: "5 Seater"
+                    },
+                    {
+                        id: 2,
+                        types: "7 Seater"
+                    }
+                ],
+                choosePetrolDiesel: [
+                    {
+                        id: 1,
+                        types: "petrol"
+                    },
+                    {
+                        id: 2,
+                        types: "diesel"
+                    }
+                ],
+                chooseTransmission: [
+                    {
+                        id: 1,
+                        types: "manual"
+                    },
+                    {
+                        id: 2,
+                        types: "Automatic"
+                    }
+                ],
                 dealer: [
                     {
                         id: 1,
@@ -939,6 +1123,36 @@ export const TabsList = [
                     },
                 ],
                 chooseVariant: [],
+                chooseSeaters: [
+                    {
+                        id: 1,
+                        types: "5 Seater"
+                    },
+                    {
+                        id: 2,
+                        types: "7 Seater"
+                    }
+                ],
+                choosePetrolDiesel: [
+                    {
+                        id: 1,
+                        types: "petrol"
+                    },
+                    {
+                        id: 2,
+                        types: "diesel"
+                    }
+                ],
+                chooseTransmission: [
+                    {
+                        id: 1,
+                        types: "manual"
+                    },
+                    {
+                        id: 2,
+                        types: "Automatic"
+                    }
+                ],
                 dealer: [
                     {
                         id: 1,
@@ -1043,6 +1257,16 @@ export const TabsList = [
                     },
                 ],
                 chooseVariant: [],
+                chooseSeaters: [
+                    {
+                        id: 1,
+                        types: "5 Seater"
+                    },
+                    {
+                        id: 2,
+                        types: "7 Seater"
+                    }
+                ],
                 dealer: [
                     {
                         id: 1,
@@ -1079,6 +1303,26 @@ export const TabsList = [
                         shopName: 'Randhawa Motors (A Div Of Randhawa Automobile Engineering Pvt Ltd).',
                         shopPinCode: 'VIKHROLI, 400079',
                         shopAddress: 'Gr. Floor, Jaswant Landmark, Mehra Compound, Lbs Marg Mumbai 400079'
+                    }
+                ],
+                choosePetrolDiesel: [
+                    {
+                        id: 1,
+                        types: "petrol"
+                    },
+                    {
+                        id: 2,
+                        types: "diesel"
+                    }
+                ],
+                chooseTransmission: [
+                    {
+                        id: 1,
+                        types: "manual"
+                    },
+                    {
+                        id: 2,
+                        types: "Automatic"
                     }
                 ],
                 dealerSelectedId: 0,
@@ -1203,6 +1447,16 @@ export const TabsList = [
                         ]
                     },
                 ],
+                chooseSeaters: [
+                    {
+                        id: 1,
+                        types: "5 Seater"
+                    },
+                    {
+                        id: 2,
+                        types: "7 Seater"
+                    }
+                ],
                 dealer: [
                     {
                         id: 1,
@@ -1221,6 +1475,26 @@ export const TabsList = [
                         shopName: 'Nbs International Ltd.',
                         shopPinCode: 'CHOWPATTY, 400004',
                         shopAddress: '10, Stone Building, Opp. Girgaon Chowpatty Mumbai 400004'
+                    }
+                ],
+                choosePetrolDiesel: [
+                    {
+                        id: 1,
+                        types: "petrol"
+                    },
+                    {
+                        id: 2,
+                        types: "diesel"
+                    }
+                ],
+                chooseTransmission: [
+                    {
+                        id: 1,
+                        types: "manual"
+                    },
+                    {
+                        id: 2,
+                        types: "Automatic"
                     }
                 ],
                 dealerSelectedId: 0,
@@ -1359,7 +1633,37 @@ export const TabsList = [
                             }
                         ]
                     }
-                ]
+                ],
+                chooseSeaters: [
+                    {
+                        id: 1,
+                        seater: "5 Seater"
+                    },
+                    {
+                        id: 2,
+                        seater: "7 Seater"
+                    }
+                ],
+                choosePetrolDiesel: [
+                    {
+                        id: 1,
+                        types: "petrol"
+                    },
+                    {
+                        id: 2,
+                        types: "diesel"
+                    }
+                ],
+                chooseTransmission: [
+                    {
+                        id: 1,
+                        types: "manual"
+                    },
+                    {
+                        id: 2,
+                        types: "Automatic"
+                    }
+                ],
             },
             {
                 id: 2,
@@ -1436,7 +1740,37 @@ export const TabsList = [
                             }
                         ]
                     }
-                ]
+                ],
+                chooseSeaters: [
+                    {
+                        id: 1,
+                        types: "5 Seater"
+                    },
+                    {
+                        id: 2,
+                        types: "7 Seater"
+                    }
+                ],
+                choosePetrolDiesel: [
+                    {
+                        id: 1,
+                        types: "petrol"
+                    },
+                    {
+                        id: 2,
+                        types: "diesel"
+                    }
+                ],
+                chooseTransmission: [
+                    {
+                        id: 1,
+                        types: "manual"
+                    },
+                    {
+                        id: 2,
+                        types: "Automatic"
+                    }
+                ],
             },
         ]
     }

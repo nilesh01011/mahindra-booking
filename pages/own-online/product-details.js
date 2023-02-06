@@ -25,9 +25,12 @@ function ProductDetails() {
         }
     }, []);
 
-    const [cardDetails, setCardDetails] = useState([])
-    const [colorChoise, setColorChoise] = useState([])
-    const [toggleColorChoise, setToggleColorChoise] = useState(1)
+    const [cardDetails, setCardDetails] = useState([]);
+    const [colorChoise, setColorChoise] = useState([]);
+    const [seater, setSeater] = useState([]);
+    const [carType, setCarType] = useState([]);
+    const [transmission, setTransmission] = useState([]);
+    const [toggleColorChoise, setToggleColorChoise] = useState(1);
     const [colorName, setColorName] = useState('');
 
     const router = useRouter();
@@ -43,6 +46,22 @@ function ProductDetails() {
 
     }, [router])
 
+    // cars seaters
+    useEffect(() => {
+        setSeater(cardDetails.chooseSeaters)
+    }, [cardDetails.chooseSeaters])
+
+    // car types petrol or diesel
+    useEffect(() => {
+        setCarType(cardDetails.choosePetrolDiesel)
+    }, [cardDetails.choosePetrolDiesel])
+
+    // chooseTransmission
+    useEffect(() => {
+        setTransmission(cardDetails.chooseTransmission)
+    }, [cardDetails.chooseTransmission])
+
+    // color select
     useEffect(() => {
         setColorChoise(cardDetails.colorChoose)
     }, [cardDetails.colorChoose],)
@@ -82,6 +101,14 @@ function ProductDetails() {
 
     const carImages = cardDetails ? cardDetails.imgSrc : null;
 
+    // contents configurations
+
+    const contents = [
+        {
+
+        }
+    ]
+
     return (
         <>
             <Head>
@@ -113,7 +140,7 @@ function ProductDetails() {
                             {/* cars title */}
                             <div className="w-full pb-[10px] sm:pt-[10px] pt-[5px] flex items-center justify-between">
                                 {/* title */}
-                                <h2 className={`${themeColors} md:text-[24px] text-[20px] font-black uppercase`}>{cardDetails.title}</h2>
+                                <h2 className={`${themeColors} md:text-[24px] text-[20px] font-[800] uppercase`}>{cardDetails.title}</h2>
                                 {/* 360 Deg */}
                                 <div>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="36" height="37" viewBox="0 0 36 37" fill="none">
@@ -145,9 +172,10 @@ function ProductDetails() {
 
                                 {/* choose config tabs */}
                                 <div className="w-full grid grid-cols-3 sm:gap-[20px] gap-[10px] mt-[12px]">
-                                    <ChooseConfig theme={theme} title="fuel" contentOne="petrol" contentTwo="diesel" />
-                                    <ChooseConfig theme={theme} title="transmission" contentOne="manual" contentTwo="automatic" />
-                                    <ChooseConfig theme={theme} title="seating" contentOne="5 Seater" contentTwo="7 Seater" />
+                                    <ChooseConfig theme={theme} title="fuel" contents={carType} />
+                                    <ChooseConfig theme={theme} title="transmission" contents={transmission} />
+                                    {/* contentOne="5 Seater" contentTwo="7 Seater" */}
+                                    <ChooseConfig theme={theme} title="seating" contents={seater} />
                                 </div>
                             </div>
                         </div>

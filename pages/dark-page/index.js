@@ -78,7 +78,7 @@ function Index() {
                     <Link onClick={handleCarSelect} href='/own-online/product-details' className='w-full md:h-[400px] h-[500px]'>
                         {
                             carBannerImage &&
-                            <Image height={500} width={1280} src={carBannerImage} alt="banner-img" className='w-full h-full object-cover' />
+                            <Image height={500} width={1280} src={carBannerImage} alt="banner-img" className='w-full h-full object-cover' priority={400} />
                         }
                     </Link>
                 </div>

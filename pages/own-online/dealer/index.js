@@ -451,7 +451,7 @@ function Index() {
 
                 <div className='w-full h-full'>
                     {/* select state and city */}
-                    <div className='mt-[28px] md:mb-[10px] mb-[7px]'>
+                    <div className='md:mt-[40px] mt-[28px] md:mb-[10px] mb-[7px]'>
                         <SelectStateCity theme={theme} />
                     </div>
                     {/* cars dealer selections */}
@@ -461,7 +461,7 @@ function Index() {
                             {/* cars title */}
                             <div className="w-full pb-[10px]">
                                 {/* title */}
-                                <h2 className={`${theme === "dark" ? 'text-white' : 'text-black'} md:text-[24px] text-[20px] font-bold uppercase`}>{cardDetails.title}</h2>
+                                <h2 className={`${theme === "dark" ? 'text-white' : 'text-black'} md:text-[24px] text-[20px] font-[800] uppercase`}>{cardDetails.title}</h2>
                                 {/* subtitle */}
                                 <ul className='flex items-center justify-start flex-wrap sm:gap-x-[8px] gap-x-[6px]'>
 
@@ -638,7 +638,7 @@ function Index() {
                     {
                         verified === true &&
                         <div className={`transition-opacity w-full h-full flex items-center justify-center`}>
-                            <div className={`z-[100] sm:w-[388px] w-[300px] h-max ${theme === "dark" ? 'bg-[#212121]' : 'bg-white'} rounded-[20px] p-[20px] border-[1px] border-white relative  overflow-hidden`}>
+                            <div className={`z-[100] sm:w-[388px] w-[320px] h-max ${theme === "dark" ? 'bg-[#212121]' : 'bg-white'} rounded-[20px] p-[20px] relative border-[1px] border-white overflow-hidden`}>
                                 {/* title */}
                                 <div className='w-full flex items-center justify-between mb-[10px] relative'>
                                     <h2 className={`${theme === "dark" ? 'text-white' : 'text-black'} font-black md:text-[20px] text-[18px] capitalize`}>Enter Your Mobile Number</h2>
@@ -692,7 +692,7 @@ function Index() {
                     {
                         verifiedOtp === true &&
                         <div className={`transition-opacity w-full h-full flex items-center justify-center`}>
-                            <div className={`z-[100] sm:w-[388px] w-[300px] h-max ${theme === "dark" ? 'bg-[#212121]' : 'bg-white'} rounded-[20px] p-[20px] border-[1px] border-white relative  overflow-hidden`}>
+                            <div className={`z-[100] sm:w-[388px] w-[320px] h-max ${theme === "dark" ? 'bg-[#212121]' : 'bg-white'} rounded-[20px] p-[20px] relative border-[1px] border-white overflow-hidden`}>
                                 {/* title */}
                                 <div className='w-full flex items-center justify-between mb-[10px] relative'>
                                     <h2 className={`${theme === "dark" ? 'text-white' : 'text-black'} font-black md:text-[20px] text-[18px] capitalize`}>Verify With OTP</h2>
@@ -797,7 +797,7 @@ function Index() {
                     {
                         userCheck === true &&
                         <div className={`transition-opacity w-full h-full flex items-center justify-center`}>
-                            <div className={`z-[100] sm:w-[388px] w-[320px] h-max ${theme === "dark" ? 'bg-[#212121]' : 'bg-white'} rounded-[20px] p-[20px] border-[1px] border-white relative  overflow-hidden`}>
+                            <div className={`z-[100] sm:w-[388px] w-[320px] h-max ${theme === "dark" ? 'bg-[#212121]' : 'bg-white'} rounded-[20px] p-[20px] relative border-[1px] border-white overflow-hidden`}>
                                 {/* title */}
                                 <div className='w-full flex items-center justify-between mb-[10px] relative'>
                                     <h2 className={`${theme === "dark" ? 'text-white' : 'text-black'} font-black md:text-[20px] text-[18px] capitalize`}>Additional Details</h2>
@@ -912,7 +912,7 @@ function Index() {
                     {
                         openExistUser === true &&
                         <div className={`transition-opacity w-full h-full flex items-center justify-center`}>
-                            <div className={`z-[100] sm:w-[388px] w-[320px] h-max ${theme === "dark" ? 'bg-[#212121]' : 'bg-white'} rounded-[20px] p-[20px] border-[1px] border-white relative  overflow-hidden`}>
+                            <div className={`z-[100] sm:w-[388px] w-[320px] h-max ${theme === "dark" ? 'bg-[#212121]' : 'bg-white'} rounded-[20px] p-[20px] relative border-[1px] border-white overflow-hidden`}>
                                 {/* title */}
                                 <div className='w-full flex items-center justify-between mb-[20px] relative'>
                                     <h2 className={`${theme === "dark" ? 'text-white' : 'text-black'} font-black md:text-[20px] text-[18px] capitalize`}>Confirm Details</h2>
@@ -938,7 +938,7 @@ function Index() {
                                                 <div className='w-full flex items-center gap-[12px]'>
                                                     {/* customs checkbox */}
                                                     {/* ${checkValidity === true ? `border-[#FF3E5B]` : ``} */}
-                                                    <div onClick={() => setChecked(!checked)} className={`w-[18px] h-[18px] flex items-center justify-center cursor-pointer rounded-[5px] border-[2px] ${theme === "dark" ? ' border-0' : 'border-[#DEDEDE]'} bg-[#F4F4F4]`}>
+                                                    <div onClick={() => { setChecked(!checked), setCheckValidity(false) }} className={`w-[18px] h-[18px] flex items-center justify-center cursor-pointer rounded-[5px] border-[2px] ${theme === "dark" ? ' border-0' : 'border-[#DEDEDE]'} bg-[#F4F4F4]`}>
                                                         <input type="checkbox" className={`appearance-none rounded-[5px] border-[1px] ${theme === "dark" ? 'bg-white border-0' : 'border-[#DEDEDE]'}`} />
                                                         <span className={`${checked ? 'opacity-1' : 'opacity-0'}`}>
                                                             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8" viewBox="0 0 11 8" fill="none"><path d="M3.66976 7.44002C3.48551 7.44083 3.30837 7.36897 3.17676 7.24002L0.87676 4.94002C0.803483 4.87726 0.743968 4.80004 0.701952 4.7132C0.659936 4.62635 0.636325 4.53176 0.632602 4.43536C0.628878 4.33895 0.645122 4.24282 0.680314 4.15299C0.715506 4.06316 0.768886 3.98158 0.837105 3.91336C0.905323 3.84514 0.986907 3.79176 1.07673 3.75657C1.16656 3.72138 1.26269 3.70514 1.3591 3.70886C1.4555 3.71258 1.55009 3.73619 1.63694 3.77821C1.72378 3.82023 1.80101 3.87974 1.86376 3.95302L3.65776 5.74702L9.02876 0.447018C9.0933 0.381741 9.17015 0.329917 9.25487 0.294548C9.33958 0.259179 9.43046 0.240967 9.52226 0.240967C9.61406 0.240967 9.70494 0.259179 9.78966 0.294548C9.87437 0.329917 9.95122 0.381741 10.0158 0.447018C10.1461 0.578172 10.2193 0.755588 10.2193 0.940518C10.2193 1.12545 10.1461 1.30286 10.0158 1.43402L4.15176 7.22802C4.09016 7.2944 4.01561 7.34746 3.93271 7.38392C3.84981 7.42038 3.76032 7.43947 3.66976 7.44002Z" fill="#EA3A51"></path></svg>
@@ -956,7 +956,9 @@ function Index() {
                                                     <div className='w-full my-[6px] flex items-center gap-[6px]'>
                                                         {/* icons */}
                                                         <div>
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8" viewBox="0 0 11 8" fill="none"><path d="M3.66976 7.44002C3.48551 7.44083 3.30837 7.36897 3.17676 7.24002L0.87676 4.94002C0.803483 4.87726 0.743968 4.80004 0.701952 4.7132C0.659936 4.62635 0.636325 4.53176 0.632602 4.43536C0.628878 4.33895 0.645122 4.24282 0.680314 4.15299C0.715506 4.06316 0.768886 3.98158 0.837105 3.91336C0.905323 3.84514 0.986907 3.79176 1.07673 3.75657C1.16656 3.72138 1.26269 3.70514 1.3591 3.70886C1.4555 3.71258 1.55009 3.73619 1.63694 3.77821C1.72378 3.82023 1.80101 3.87974 1.86376 3.95302L3.65776 5.74702L9.02876 0.447018C9.0933 0.381741 9.17015 0.329917 9.25487 0.294548C9.33958 0.259179 9.43046 0.240967 9.52226 0.240967C9.61406 0.240967 9.70494 0.259179 9.78966 0.294548C9.87437 0.329917 9.95122 0.381741 10.0158 0.447018C10.1461 0.578172 10.2193 0.755588 10.2193 0.940518C10.2193 1.12545 10.1461 1.30286 10.0158 1.43402L4.15176 7.22802C4.09016 7.2944 4.01561 7.34746 3.93271 7.38392C3.84981 7.42038 3.76032 7.43947 3.66976 7.44002Z" fill="#EA3A51"></path></svg>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14" fill="none">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.62683 1.45819L12.0126 6.84398C12.0907 6.92209 12.0907 7.04872 12.0126 7.12683L6.62683 12.5126C6.54872 12.5907 6.42209 12.5907 6.34398 12.5126L0.958188 7.12683C0.880084 7.04872 0.880083 6.92209 0.958188 6.84398L6.34399 1.45819C6.42209 1.38008 6.54872 1.38008 6.62683 1.45819ZM5.7783 0.892502C6.16882 0.501978 6.80199 0.501979 7.19251 0.892503L12.5783 6.2783C12.9688 6.66882 12.9688 7.30199 12.5783 7.69251L7.19251 13.0783C6.80199 13.4688 6.16882 13.4688 5.7783 13.0783L0.392502 7.69251C0.001978 7.30199 0.00197857 6.66882 0.392503 6.2783L5.7783 0.892502ZM6.88541 4.5854C6.88541 4.36448 6.70632 4.1854 6.48541 4.1854C6.26449 4.1854 6.08541 4.36448 6.08541 4.5854V7.98532C6.08541 8.20623 6.26449 8.38532 6.48541 8.38532C6.70632 8.38532 6.88541 8.20623 6.88541 7.98532V4.5854ZM6.88541 9.45129C6.88542 9.23038 6.70635 9.05128 6.48544 9.05127C6.26452 9.05125 6.08542 9.23032 6.08541 9.45124L6.08541 9.47306C6.08539 9.69397 6.26446 9.87307 6.48538 9.87308C6.70629 9.8731 6.88539 9.69403 6.88541 9.47311L6.88541 9.45129Z" fill="#FF3E5B" />
+                                                            </svg>
                                                         </div>
 
                                                         <span className='sm:text-[14px] text-[12px] text-[#FF3E5B] capitalize'>required</span>

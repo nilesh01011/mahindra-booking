@@ -27,3 +27,41 @@ input {
   -ms-scrollbar-width: none; /* IE and Edge */
   scrollbar-width: none;
 }
+
+#boxs .box:hover {
+  background: #ce0e2d;
+  color: #fff;
+}
+
+#img2 {
+  display: none;
+}
+
+#boxs .box:hover #img2 {
+  display: block;
+}
+
+#boxs .box:hover #img1 {
+  display: none;
+}
+
+#boxs .box button {
+  border: 1px solid #000;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+#boxs .box:hover button {
+  border-color: #fff;
+}
+
+#boxs .box:hover button:hover {
+  background: #fff;
+  color: #ce0e2d;
+}
+
+@media screen and (max-width: 756px) {
+  #boxs .box {
+    border-bottom: 1px solid #000;
+  }
+}

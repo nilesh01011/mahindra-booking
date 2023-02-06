@@ -13,7 +13,7 @@ function Steppers({ Steps, theme }) {
         <ul className='w-[320px] h-full flex items-center justify-between relative '>
             {/* before:content-[""] before:absolute before:-bottom-[15%] before:left-[5%] before:right-[5%] before:w-[90%] before:h-[1px] before:bg-white */}
 
-            <li className='absolute left-[8%] 1x1:-bottom-[10px] -bottom-[8.5px] w-[85%] h-[1px] bg-[#8E8585] -z-[1]'></li>
+            <li className={`absolute left-[8%] -bottom-[11px] w-[85%] h-[1px] bg-[#8E8585] -z-[1]`}></li>
 
             {
                 steppersList.map((ele) => {
@@ -25,11 +25,11 @@ function Steppers({ Steps, theme }) {
 
                     return (
                         <li key={id} className="relative flex items-center justify-center">
-                            <span className={`1x1:text-[12px] text-[10px] ${activeSet === true ? 'text-[#FF3E5B]' : `${checkValue ? `${theme === "dark" ? 'text-white' : 'text-black'}` : 'text-[#8E8585]'}`} uppercase w-max`}>
+                            <span className={`text-[14px] ${activeSet === true ? 'text-[#FF3E5B]' : `${checkValue ? `${theme === "dark" ? 'text-white' : 'text-black'}` : 'text-[#8E8585]'}`} uppercase w-max`}>
                                 {title}
                             </span>
-
-                            <div className={`absolute ${lastValues.id === Steps ? '-bottom-[26px]' : '-bottom-[23px]'}`}>
+                            {/* ${lastValues.id === Steps ? '-bottom-[26px]' : '-bottom-[23px]'} */}
+                            <div className={`absolute -bottom-[22.5px]`}>
                                 {
                                     checkValue ? (
                                         <span>
