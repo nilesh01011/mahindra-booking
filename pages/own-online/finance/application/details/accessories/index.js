@@ -158,8 +158,8 @@ function Index() {
                     </div>
 
                     {/* searchs boxs */}
-                    <div className='w-max'>
-                        <div className='w-[286px] h-[36px] relative'>
+                    <div className='w-auto'>
+                        <div className='sm:w-[286px] w-full h-[36px] relative'>
                             <input type="search" placeholder='Search for Accessories' className={`w-full p-[8px_16px] pr-[36px] rounded-[5px] placeholder:capitalize 1x1:placeholder:text-[14px] placeholder:text-[12px] ${theme === "dark" ? 'bg-[#242424] text-white placeholder:text-[#635D5D]' : 'bg-white text-black placeholder:text-[#635D5D]'}`} />
 
                             <div className='h-[16px] absolute right-[14px] top-[10px]'>
@@ -230,17 +230,17 @@ function Index() {
                                                 </div>
 
                                                 {/* add buttons */}
-                                                <div onClick={() => handleActiveClick(id)} className='absolute -top-[25%] right-3 h-[36px] w-[36px] rounded-full bg-white cursor-pointer flex items-center justify-center'>
+                                                <div onClick={() => handleActiveClick(id)} className='absolute -top-[25%] right-3 sm:h-[36px] h-[28px] sm:w-[36px] w-[28px] rounded-full bg-white cursor-pointer flex items-center justify-center'>
                                                     {
                                                         id === 2 || idAdd === id ? (
-                                                            <div className='h-[19px] flex items-center justify-center'>
+                                                            <div className='sm:h-[19px] h-[15px] flex items-center justify-center'>
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="3" viewBox="0 0 18 3" fill="none">
                                                                     <rect width="18" height="3" fill="#FF3E5B" />
                                                                 </svg>
                                                             </div>
                                                         ) : (
-                                                            <div className='h-[19px]'>
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="21" viewBox="0 0 19 21" fill="none">
+                                                            <div className='sm:h-[19px] h-[15px]'>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" className='sm:h-[19px] h-[15px]' width="19" height="21" viewBox="0 0 19 21" fill="none">
                                                                     <path d="M8.03805 20.353V11.873H0.123047V9.17302H8.03805V0.692017H10.865V9.17302H18.78V11.873H10.865V20.353H8.03805Z" fill="#FF3E5B" />
                                                                 </svg>
                                                             </div>
@@ -310,17 +310,17 @@ function Index() {
                                                 </div>
 
                                                 {/* add buttons */}
-                                                <div onClick={() => handleActiveClick(id)} className='absolute -top-[25%] right-3 h-[36px] w-[36px] rounded-full bg-white cursor-pointer flex items-center justify-center'>
+                                                <div onClick={() => handleActiveClick(id)} className='absolute -top-[25%] right-3 sm:h-[36px] h-[28px] sm:w-[36px] w-[28px] rounded-full bg-white cursor-pointer flex items-center justify-center'>
                                                     {
                                                         active === true ? (
-                                                            <div className='h-[19px] flex items-center justify-center'>
+                                                            <div className='sm:h-[19px] h-[15px] flex items-center justify-center'>
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="3" viewBox="0 0 18 3" fill="none">
                                                                     <rect width="18" height="3" fill="#FF3E5B" />
                                                                 </svg>
                                                             </div>
                                                         ) : (
-                                                            <div className='h-[19px]'>
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="21" viewBox="0 0 19 21" fill="none">
+                                                            <div className='sm:h-[19px] h-[15px]'>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" className='sm:h-[19px] h-[15px]' width="19" height="21" viewBox="0 0 19 21" fill="none">
                                                                     <path d="M8.03805 20.353V11.873H0.123047V9.17302H8.03805V0.692017H10.865V9.17302H18.78V11.873H10.865V20.353H8.03805Z" fill="#FF3E5B" />
                                                                 </svg>
                                                             </div>
