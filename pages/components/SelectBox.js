@@ -65,10 +65,11 @@ function SelectBox({ items, theme, placeholder, mandatory }) {
                             <ul className={`z-20 divide-y-[1px] border-[1px] ${theme === 'dark' ? 'bg-[#0B0B0C] border-[#A3A3A3] divide-[#635D5D]' : 'bg-[#F4F4F4] border-[#DEDEDE] divide-[#DEDEDE]'} ${isOpen ? 'opacity-1 duration-[1500ms]' : 'opacity-0 duration-[1500ms]'} relative w-full left-0 right-0 md:-top-[402%] top-2 rounded-[10px] transition-all`}>
                                 {items.map((ele, id) => {
                                     {/* console.log(items.length - 1 === id); */ }
+                                    // last element
                                     const lastArray = items.length - 1;
 
                                     return (
-                                        <li key={id} onClick={selectBoxText} className={`${theme === 'dark' ? `hover:bg-[#242424] text-[#A3A3A3] ${ele.id === 1 && "rounded-[10px_10px_0_0]"}` : 'hover:bg-white text-[#0B0B0C]'} ${lastArray + 1 === ele.id && 'rounded-[0_0_10px_10px]'} box-border px-4 pt-[4px] pb-[6px] cursor-pointer`}>{ele.name}</li>
+                                        <li key={id} onClick={selectBoxText} className={`${theme === 'dark' ? `hover:bg-[#242424] text-[#A3A3A3]` : 'hover:bg-white text-[#0B0B0C]'} ${ele.id === 1 && "rounded-[10px_10px_0_0]"} ${lastArray + 1 === ele.id && 'rounded-[0_0_10px_10px]'} box-border px-4 pt-[4px] pb-[6px] cursor-pointer`}>{ele.name}</li>
                                     )
                                 })}
                             </ul>
