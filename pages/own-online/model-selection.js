@@ -67,7 +67,7 @@ function ModelListSelection() {
                             <Steppers Steps={1} />
                         </div>
                         {/* ex-showroom placement button */}
-                        <div className='sm:mb-[15px] sm:mt-[40px] mt-[28px] mb-[5px] z-50'>
+                        <div className='sm:mb-[15px] sm:mt-[45px] mt-[32px] mb-[10px] z-50'>
                             <SelectStateCity theme={theme} />
                         </div>
                         {/* tabs */}
@@ -88,7 +88,7 @@ function ModelListSelection() {
                             {/* content body */}
                             <div className='w-full h-full'>
                                 {/* title */}
-                                <h1 className={`${theme === "dark" ? 'text-white' : 'text-black'} sm:text-[26px] text-[20px] font-bold sm:mt-[12px] mt-[14px] sm:pb-[14px] pb-[5px]`}>Select Vehicle</h1>
+                                <h1 className={`${theme === "dark" ? 'text-white' : 'text-black'} sm:text-[26px] text-[20px] font-bold sm:mt-[12px] mt-[18px] sm:pb-[20px] pb-[15px]`}>Select Vehicle</h1>
                             </div>
 
                         </div>

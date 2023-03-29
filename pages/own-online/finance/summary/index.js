@@ -177,7 +177,7 @@ function Index() {
                 }
                 {/* main cars details */}
 
-                <div className={`w-full h-full ${successfull === true ? 'xss:mt-[15px] mt-[6px]' : 'md:mt-[40px] mt-[25px]'}`}>
+                <div className={`w-full h-full ${successfull === true ? 'xss:mt-[15px] mt-[10px]' : 'md:mt-[45px] mt-[30px]'}`}>
                     {/* cars dealer selections */}
                     <div className='w-full h-full flex xl:flex-row flex-col xl:gap-[20px] gap-[10px] mb-[70px]'>
                         {/* left sides */}

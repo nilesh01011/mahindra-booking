@@ -451,7 +451,7 @@ function Index() {
 
                 <div className='w-full h-full'>
                     {/* select state and city */}
-                    <div className='md:mt-[40px] mt-[28px] md:mb-[10px] mb-[7px]'>
+                    <div className='md:mt-[45px] mt-[30px] md:mb-[10px] mb-[7px]'>
                         <SelectStateCity theme={theme} />
                     </div>
                     {/* cars dealer selections */}

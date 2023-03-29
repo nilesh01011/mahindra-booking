@@ -129,7 +129,7 @@ function ProductDetails() {
                 </div>
 
                 {/* main cars details */}
-                <div className="w-full h-full flex lg:flex-row flex-col justify-between sm:mt-[40px] mt-[28px] mb-[25px]">
+                <div className="w-full h-full flex lg:flex-row flex-col justify-between sm:mt-[45px] mt-[32px] mb-[25px]">
                     {/* left side cars details */}
                     <div className="lg:w-[45%] w-full h-full flex flex-col">
                         {/* select state and city */}
