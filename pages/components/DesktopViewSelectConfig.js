@@ -3,7 +3,7 @@ import React from 'react'
 import Buttons from './Buttons'
 
 function DesktopViewSelectConfig({ theme }) {
-    const imgSrc = '/image 10.png';
+    const imgSrc = '/image-10.png';
     const themeChangeColor = theme === "dark" ? 'text-white' : 'text-black';
 
     return (

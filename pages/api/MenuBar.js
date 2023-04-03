@@ -11,63 +11,63 @@ export const megaMenuBar = [
                         id: 1,
                         title: 'SCORPIO N',
                         // imgSrc: '/scorpio-n.webp',
-                        imgSrc: '/image 10.png',
+                        imgSrc: '/image-10.png',
                         price: '1199000'
                     },
                     {
                         id: 2,
                         title: 'XUV 700',
                         // imgSrc: '/xuv700.png',
-                        imgSrc: '/image 10.png',
+                        imgSrc: '/image-10.png',
                         price: '1344901'
                     },
                     {
                         id: 3,
                         title: 'Thar',
                         // imgSrc: '/thar.webp',
-                        imgSrc: '/image 10.png',
+                        imgSrc: '/image-10.png',
                         price: '1359101'
                     },
                     {
                         id: 4,
                         title: 'xuv 300',
                         // imgSrc: '/xuv300.webp',
-                        imgSrc: '/image 10.png',
+                        imgSrc: '/image-10.png',
                         price: '841499'
                     },
                     {
                         id: 5,
                         title: 'scorpio classic',
                         // imgSrc: '/scorpioclassic.webp',
-                        imgSrc: '/image 10.png',
+                        imgSrc: '/image-10.png',
                         price: '1199000'
                     },
                     {
                         id: 6,
                         title: 'bolero neo',
                         // imgSrc: '/boleroneo.webp',
-                        imgSrc: '/image 10.png',
+                        imgSrc: '/image-10.png',
                         price: '947799'
                     },
                     {
                         id: 7,
                         title: 'bolero',
                         // imgSrc: '/bolero.webp',
-                        imgSrc: '/image 10.png',
+                        imgSrc: '/image-10.png',
                         price: '613103'
                     },
                     {
                         id: 8,
                         title: 'scorpio classic',
                         // imgSrc: '/marazzo.png',
-                        imgSrc: '/image 10.png',
+                        imgSrc: '/image-10.png',
                         price: '1340501'
                     },
                     {
                         id: 9,
                         title: 'kuv100',
                         // imgSrc: '/kuv100.png',
-                        imgSrc: '/image 10.png',
+                        imgSrc: '/image-10.png',
                         price: '613103'
                     }
                 ]

@@ -179,7 +179,7 @@ export const TabsList = [
                 // imgSrc: '/xuv700.png',
                 bgImg: '/lightPageBanner.webp',
                 ladingPageImg: '/landingPage.png',
-                imgSrc: '/image 10.png',
+                imgSrc: '/image-10.png',
                 price: '1344901',
                 colorChoose: [
                     {
