@@ -286,7 +286,7 @@ function Index() {
                                                     <h2 className={`${themeChangeColor} md:text-[18px] text-[16px] font-bold select-none`}>
                                                         ₹{new Intl.NumberFormat('en-IN').format(cardDetails.price)}*
                                                     </h2>
-                                                    <span className={`${themeChangeColor} text-[12px]`}>Ex-Showroom Pune</span>
+                                                    <span className={`${themeChangeColor} text-[12px]`}>Ex-Showroom Mumbai</span>
                                                 </div>
 
                                             </div>
