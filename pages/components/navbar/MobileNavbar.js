@@ -207,7 +207,7 @@ function MobileNavbar({ theme }) {
 
                                                         return (
                                                             <>
-                                                                <button key={id} className={`w-full ${currentItems === id ? 'h-full' : 'h-[38px]'} ${theme === "dark" ? 'bg-[#3C3C3C]' : 'bg-[#F4F4F4]'} rounded-[6px]`}>
+                                                                <button type='button' key={id} className={`w-full ${currentItems === id ? 'h-full' : 'h-[38px]'} ${theme === "dark" ? 'bg-[#3C3C3C]' : 'bg-[#F4F4F4]'} rounded-[6px]`}>
                                                                     <div key={currentItems} onClick={() => handleCurrentItemsCollapse(el)} className={`w-full flex items-center justify-between h-full ${theme === "dark" ? `${currentItems === id && collapseOpen ? 'bg-[#e51636]' : 'bg-[#3C3C3C]'}` : `${currentItems === id && collapseOpen ? 'bg-[#e51636]' : 'bg-[#F4F4F4]'}`} p-[10px_25px]`}>
                                                                         <span className={`text-[15px] ${collapseOpen && currentItems === id ? 'text-white' : ''}`}>{name}</span>
                                                                         {/* icons */}

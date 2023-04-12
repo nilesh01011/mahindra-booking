@@ -144,7 +144,7 @@ function Navbars() {
                                                                     contentShow === 'vehicles' &&
                                                                     <div className='w-full h-full mt-[22px]'>
                                                                         <div className='w-full flex items-center justify-center'>
-                                                                            <button className={`h-[44px] p-[8px_20px_9px] font-black text-white capitalize rounded-[10px] border-white bg-[#191919] hover:bg-[#ce0e2d] hover:border-[#ce0e2d] border-2`}>see all vehicles</button>
+                                                                            <button type='button' className={`h-[44px] p-[8px_20px_9px] font-black text-white capitalize rounded-[10px] border-white bg-[#191919] hover:bg-[#ce0e2d] hover:border-[#ce0e2d] border-2`}>see all vehicles</button>
                                                                         </div>
                                                                     </div>
                                                                 }
