@@ -427,7 +427,7 @@ function Index() {
                                     {/* boxes */}
                                     <div className='w-full h-full flex flex-col gap-[16px]'>
                                         {/* box 1 */}
-                                        <CustomiseQuote link='' theme={theme} icons={financeIcons && financeIcons} text="Finance Your Vehicle" />
+                                        <CustomiseQuote link='' theme={theme} icons={financeIcons && financeIcons} getSelectedDealer={getSelectedDealer} cardDetails={cardDetails} text="Finance Your Vehicle" />
                                         <CustomiseQuote link='' theme={theme} icons={filesIcons && filesIcons} text="Get Insurance Quote" />
                                         <CustomiseQuote link='/own-online/finance/application/details/accessories' getSelectedDealer={getSelectedDealer} cardDetails={cardDetails} theme={theme} icons={accessoriesIcons && accessoriesIcons} text="Accessories" />
                                     </div>

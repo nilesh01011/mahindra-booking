@@ -25,7 +25,7 @@ export default function App({ Component, pageProps }) {
       localStorage.setItem('theme', "dark");
     }
 
-  }, []);
+  }, [theme]);
 
   // set pages theme colors
   useEffect(() => {
