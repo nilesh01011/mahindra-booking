@@ -61,7 +61,7 @@ function ModelListSelection() {
             <main className='w-full h-full pb-[10px] max-w-[1206px] mx-auto'>
                 <div className='w-full h-full xl:px-0 px-[15px]'>
                     {/* fixed left-0 right-0 */}
-                    <div className={`z-20 w-full h-full md:pt-[10px] sticky top-[67px] ${theme === "dark" ? 'bg-[#0B0B0C]' : 'bg-[#F4F4F4]'}`}>
+                    <div className={`z-20 w-full h-full md:pt-[10px] sticky top-[67px] ${theme === "light" ? 'bg-[#F4F4F4]' : 'bg-[#0B0B0C]'}`}>
                         {/* steppers */}
                         <div className='w-full h-[30px] flex justify-center'>
                             <Steppers Steps={1} />

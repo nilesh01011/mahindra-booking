@@ -8,7 +8,7 @@ function Cards({ id, title, price, imgSrc, allDetails, theme }) {
     const prices = new Intl.NumberFormat('en-IN').format(price);
 
     return (
-        <div key={id} className={`xl:w-[380px] lg:w-full h-[337px] rounded-[10px] p-[15px] ${theme === "dark" ? 'bg-[#242424]' : 'bg-white'} shadow-md flex flex-col justify-between`}>
+        <div key={id} className={`xl:w-[380px] lg:w-full h-[337px] rounded-[10px] p-[15px] ${theme === "light" ? 'bg-white' : 'bg-[#242424]'} shadow-md flex flex-col justify-between`}>
             {/* cars name and prices */}
             <div className='flex items-center justify-between'>
                 <h1 className={`font-black sm:text-[18px] text-[16px] uppercase whitespace-nowrap ${theme === "dark" ? 'text-white' : 'text-black'}`}>{title}</h1>
