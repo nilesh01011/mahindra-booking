@@ -189,7 +189,7 @@ function DeskTopNavbar({ theme }) {
                             {/* search and user profile */}
                             <div className='flex items-center gap-4'>
                                 <div className='px-[15px]'>
-                                    <h1 className={`${theme === "dark" ? 'text-white' : 'text-black'}`}>Text Drive</h1>
+                                    <h1 className={`${theme === "light" ? 'text-black' : 'text-white'}`}>Text Drive</h1>
                                 </div>
                                 <div className='px-[15px]'>
                                     <h1 className=''>Locate Us</h1>
@@ -206,8 +206,8 @@ function DeskTopNavbar({ theme }) {
                                 modelSelecMenu && menuHide &&
                                 <div onClick={() => setMenuHide(false)} className='w-max cursor-pointer'>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                                        <path d="M1 1.5L15 15.5" stroke={`${theme === "dark" ? 'white' : '#0B0B0C'}`} strokeWidth="2" strokeLinecap="round" />
-                                        <path d="M15 1.5L1 15.5" stroke={`${theme === "dark" ? 'white' : '#0B0B0C'}`} strokeWidth="2" strokeLinecap="round" />
+                                        <path d="M1 1.5L15 15.5" stroke={`${theme === "light" ? '#0B0B0C' : 'white'}`} strokeWidth="2" strokeLinecap="round" />
+                                        <path d="M15 1.5L1 15.5" stroke={`${theme === "light" ? '#0B0B0C' : 'white'}`} strokeWidth="2" strokeLinecap="round" />
                                     </svg>
                                 </div>
                             }
