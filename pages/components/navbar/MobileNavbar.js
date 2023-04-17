@@ -84,14 +84,14 @@ function MobileNavbar({ theme }) {
                         {/* logo */}
                         <div className='w-[102px] h-[15px] flex items-center gap-2'>
                             <Link className="h-[15px]" href='/'>
-                                <Image width={102} height={11} className="w-[102px] h-[11px] object-contain" src={`${theme === "dark" ? darkModeImgLogo && darkModeImgLogo : lightModeImgLogo && lightModeImgLogo}`} alt='logo-images' priority={11} />
+                                <Image width={102} height={11} className="w-[102px] h-[11px] object-contain" src={`${theme === "light" ? lightModeImgLogo && lightModeImgLogo : darkModeImgLogo && darkModeImgLogo}`} alt='logo-images' priority={11} />
                             </Link>
                         </div>
                         {/* humburger */}
                         <div className='flex gap-[26px] items-center'>
                             {/* model - selections */}
                             <div className='w-max'>
-                                <h2 className={`${theme === "dark" ? 'text-white' : 'text-black'} text-[12px]`}>Buy Online</h2>
+                                <h2 className={`${theme === "light" ? 'text-black' : 'text-white'} text-[12px]`}>Buy Online</h2>
                             </div>
                             <div onClick={() => setIsActive(!isActive)} className='flex flex-col gap-1 w-[18px] h-[12px] cursor-pointer'>
                                 <span className={`w-full h-full ${theme === "dark" ? 'bg-white' : 'bg-black'} rounded-md`}></span>

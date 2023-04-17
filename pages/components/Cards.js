@@ -11,10 +11,10 @@ function Cards({ id, title, price, imgSrc, allDetails, theme }) {
         <div key={id} className={`xl:w-[380px] lg:w-full h-[337px] rounded-[10px] p-[15px] ${theme === "light" ? 'bg-white' : 'bg-[#242424]'} shadow-md flex flex-col justify-between`}>
             {/* cars name and prices */}
             <div className='flex items-center justify-between'>
-                <h1 className={`font-black sm:text-[18px] text-[16px] uppercase whitespace-nowrap ${theme === "dark" ? 'text-white' : 'text-black'}`}>{title}</h1>
+                <h1 className={`font-black sm:text-[18px] text-[16px] uppercase whitespace-nowrap ${theme === "light" ? 'text-black' : 'text-white'}`}>{title}</h1>
                 <div className='w-full h-full flex justify-end items-center sm:text-[16px] text-[14px] flex-wrap'>
-                    <p className={`${theme === "dark" ? 'text-white' : 'text-black'} mr-1`}>Starts at</p>
-                    <span className={`font-black ${theme === "dark" ? 'text-white' : 'text-black'}`}>₹{prices}*</span>
+                    <p className={`${theme === "light" ? 'text-black' : 'text-white'} mr-1`}>Starts at</p>
+                    <span className={`font-black ${theme === "light" ? 'text-black' : 'text-white'}`}>₹{prices}*</span>
                 </div>
             </div>
             {/* images src */}

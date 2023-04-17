@@ -43,7 +43,7 @@ function TabsContent({ theme }) {
             {/* content body */}
             <div className='w-full h-full mb-[30px]'>
                 {/* title */}
-                <h1 className={`text-[26px] font-bold my-[20px] ${theme === "dark" ? 'text-white' : 'text-black'}`}>Select Vehicle</h1>
+                <h1 className={`text-[26px] font-bold my-[20px] ${theme === "light" ? 'text-black' : 'text-white'}`}>Select Vehicle</h1>
                 <div className='w-full h-full grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[20px] items-center'>
                     {
                         carsListBody.map((ele) => {

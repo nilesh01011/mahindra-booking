@@ -77,7 +77,7 @@ function ModelListSelection() {
                                     TabsList.map((ele) => {
                                         const { id, title } = ele
                                         return (
-                                            <button key={id} type='button' onClick={() => toggleTabs(id)} className={`relative ${toggleState === id ? 'font-bold' : 'font-[400]'} ${theme === "dark" ? 'text-white' : 'text-black'} sm:w-[107px] w-full ${ele.length}`}>
+                                            <button key={id} type='button' onClick={() => toggleTabs(id)} className={`relative ${toggleState === id ? 'font-bold' : 'font-[400]'} ${theme === "light" ? 'text-black' : 'text-white'} sm:w-[107px] w-full ${ele.length}`}>
                                                 {title}
                                                 <span className={`absolute bottom-[-5px] left-0 w-full h-[2px] ${toggleState === id ? 'bg-[#FF3E5B]' : 'bg-[#FF3E5B] opacity-[20%]'}`}></span>
                                             </button>
@@ -88,7 +88,7 @@ function ModelListSelection() {
                             {/* content body */}
                             <div className='w-full h-full'>
                                 {/* title */}
-                                <h1 className={`${theme === "dark" ? 'text-white' : 'text-black'} sm:text-[26px] text-[20px] font-bold sm:mt-[12px] mt-[18px] sm:pb-[20px] pb-[15px]`}>Select Vehicle</h1>
+                                <h1 className={`${theme === "light" ? 'text-black' : 'text-white'} sm:text-[26px] text-[20px] font-bold sm:mt-[12px] mt-[18px] sm:pb-[20px] pb-[15px]`}>Select Vehicle</h1>
                             </div>
 
                         </div>

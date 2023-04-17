@@ -108,7 +108,7 @@ function DeskTopNavbar({ theme }) {
                         {/* logo */}
                         <div className='h-full w-[150px]'>
                             <Link onClick={() => handleHome()} href='/' className='w-full h-[80px]'>
-                                <Image width={200} height={40} className="" src={`${theme === "dark" ? darkModeImgLogo && darkModeImgLogo : lightModeImgLogo && lightModeImgLogo}`} alt='light-logo-images' />
+                                <Image width={200} height={40} className="" src={`${theme === "light" ? lightModeImgLogo && lightModeImgLogo : darkModeImgLogo && darkModeImgLogo}`} alt='light-logo-images' />
                             </Link>
                         </div>
                     </div>
@@ -126,7 +126,7 @@ function DeskTopNavbar({ theme }) {
                                                     <span onClick={() => { megaMenuOnclick(name, id) }} className="ml-2 cursor-pointer">{name}</span>
                                                     {
                                                         contentIdShow === id && isActive &&
-                                                        <div onMouseLeave={() => setIsActive(false)} key={id} className={` ${ele.menuList.length !== 0 ? `${ele.name === 'buy' ? 'w-[1300%]' : 'w-[970%]'} border-[1px] border-[#3C3C3C] absolute left-0 top-[55px] flex divide-black divide-x-[1px] h-max ${theme === "dark" ? 'bg-[#3C3C3C]' : 'bg-[#F4F4F4]'} z-50 shadow-lg` : 'hidden'}`}>
+                                                        <div onMouseLeave={() => setIsActive(false)} key={id} className={` ${ele.menuList.length !== 0 ? `${ele.name === 'buy' ? 'w-[1300%]' : 'w-[970%]'} border-[1px] border-[#3C3C3C] absolute left-0 top-[55px] flex divide-black divide-x-[1px] h-max ${theme === "light" ? 'bg-[#F4F4F4]' : 'bg-[#3C3C3C]'} z-50 shadow-lg` : 'hidden'}`}>
                                                             <div className="w-[25%] h-full border-black border-r-0">
                                                                 <ul className='w-full h-full'>
                                                                     {
@@ -223,13 +223,13 @@ function DeskTopNavbar({ theme }) {
                                 {
                                     modelSelectionPathname &&
                                     <div className='w-max'>
-                                        <h2 className={`${theme === "dark" ? 'text-white' : 'text-black'} text-[12px]`}>Buy Online</h2>
+                                        <h2 className={`${theme === "light" ? 'text-black' : 'text-white'} text-[12px]`}>Buy Online</h2>
                                     </div>
                                 }
                                 <div onClick={() => modelSelectionPathname ? setMenuHide(true) : setMobileView(!mobileView)} className='flex flex-col gap-1 w-[18px] h-[12px] cursor-pointer'>
-                                    <span className={`w-full h-full ${theme === "dark" ? 'bg-white' : 'bg-black'} rounded-md`}></span>
-                                    <span className={`w-full h-full ${theme === "dark" ? 'bg-white' : 'bg-black'} rounded-md`}></span>
-                                    <span className={`w-full h-full ${theme === "dark" ? 'bg-white' : 'bg-black'} rounded-md`}></span>
+                                    <span className={`w-full h-full ${theme === "light" ? 'bg-black' : 'bg-white'} rounded-md`}></span>
+                                    <span className={`w-full h-full ${theme === "light" ? 'bg-black' : 'bg-white'} rounded-md`}></span>
+                                    <span className={`w-full h-full ${theme === "light" ? 'bg-black' : 'bg-white'} rounded-md`}></span>
                                 </div>
                             </div>
                         </div>
