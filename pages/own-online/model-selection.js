@@ -50,7 +50,7 @@ function ModelListSelection() {
         <>
             <Head>
                 <title>Mahindra SUV Models in India</title>
-                <meta name="description" content="Product List" />
+                <meta name="description" content="Mahindra SUV Models Product List" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>

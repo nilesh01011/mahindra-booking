@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react'
@@ -130,12 +129,6 @@ function Index() {
 
     return (
         <>
-            <Head>
-                <title>Mahindra Booking</title>
-                <meta name="description" content="Product List" />
-                <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
 
             <Navbar theme={theme} />
 

@@ -2,7 +2,6 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react'
-import AccessoriesBox from '../../../../../components/AccessoriesBox';
 import Buttons from '../../../../../components/Buttons';
 import Navbar from '../../../../../components/navbar/Navbar';
 // import InputFields from '../../../../../components/InputFields';
@@ -142,7 +141,7 @@ function Index() {
         <>
             <Head>
                 <title>Cars Accessories</title>
-                <meta name="description" content="Product List" />
+                <meta name="description" content="Accessories Product List" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>

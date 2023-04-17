@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import MobileNavbar from './components/navbar/MobileNavbar'
@@ -12,12 +11,6 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <title>Mahindra</title>
-        <meta name="description" content="Product List" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       {/* navbar tabs */}
 
       <main className='w-full h-full'>

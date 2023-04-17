@@ -84,7 +84,7 @@ function MobileNavbar({ theme }) {
                         {/* logo */}
                         <div className='w-[102px] h-[15px] flex items-center gap-2'>
                             <Link className="h-[15px]" href='/'>
-                                <Image width={102} height={11} className="w-full h-full object-contain" src={`${theme === "dark" ? darkModeImgLogo && darkModeImgLogo : lightModeImgLogo && lightModeImgLogo}`} alt='logo-images' priority={11} />
+                                <Image width={102} height={11} className="w-[102px] h-[11px] object-contain" src={`${theme === "dark" ? darkModeImgLogo && darkModeImgLogo : lightModeImgLogo && lightModeImgLogo}`} alt='logo-images' priority={11} />
                             </Link>
                         </div>
                         {/* humburger */}

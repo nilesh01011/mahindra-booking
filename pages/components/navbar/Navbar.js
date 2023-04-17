@@ -2,7 +2,23 @@ import React, { useEffect, useState } from 'react'
 import DeskTopNavbar from './DeskTopNavbar'
 import MobileNavbar from './MobileNavbar'
 
-function Navbar({ theme }) {
+function Navbar() {
+    // get theme
+    const [theme, setTheme] = useState('');
+
+    useEffect(() => {
+        const themes = localStorage.getItem('theme');
+
+        if (themes === "dark") {
+            setTheme('dark');
+            localStorage.setItem('theme', "dark");
+        }
+
+        if (themes === "light") {
+            setTheme('light');
+            localStorage.setItem('theme', "light");
+        }
+    }, [theme])
 
     return (
         <>

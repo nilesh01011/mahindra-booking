@@ -68,7 +68,7 @@ function Index() {
         <>
             <Head>
                 <title>Add-ons</title>
-                <meta name="description" content="Product List" />
+                <meta name="description" content="Mahindra Booking Add-ons" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>

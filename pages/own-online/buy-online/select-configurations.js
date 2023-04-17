@@ -1,7 +1,4 @@
-import Head from 'next/head';
-import Image from 'next/image';
 import React, { useEffect, useRef, useState } from 'react'
-import Buttons from '../../components/Buttons';
 import DesktopViewSelectConfig from '../../components/DesktopViewSelectConfig';
 import MobileViewSelectConfig from '../../components/MobileViewSelectConfig';
 import Steppers from '../../components/Steppers'
@@ -40,13 +37,6 @@ function SelectConfigurations() {
 
     return (
         <>
-            <Head>
-                <title>Select-Configurations</title>
-                <meta name="description" content="Product List" />
-                <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
-
             <div className='w-full h-full pt-[10px] max-w-[1200px] mx-auto xl:px-0 px-[15px]'>
                 {/* steppers */}
                 <div className='w-full h-[30px] flex justify-center'>

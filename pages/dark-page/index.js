@@ -66,7 +66,7 @@ function Index() {
         <>
             <Head>
                 <title>Scorpio-N</title>
-                <meta name="description" content="Product List" />
+                <meta name="description" content="Mahindra Booking Scorpio-N Product List" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>

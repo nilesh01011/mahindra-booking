@@ -1,6 +1,5 @@
 import Image from 'next/image'
-import React, { useEffect, useState } from 'react'
-import { megaMenuBar } from '../api/MenuBar';
+import React from 'react'
 import Buttons from './Buttons'
 
 function Cards({ id, title, price, imgSrc, allDetails, theme }) {
@@ -20,7 +19,7 @@ function Cards({ id, title, price, imgSrc, allDetails, theme }) {
             </div>
             {/* images src */}
             <div className='w-full h-[200px] flex items-center justify-center'>
-                <Image src={imgSrc && imgSrc} alt={title} width={289} height={200} className="w-full h-full object-contain" />
+                <Image src={imgSrc && imgSrc} alt={title} width={289} height={200} className="w-[289px] h-[200px] object-contain" />
             </div>
             {/* buttons */}
             <div className='w-full flex justify-center gap-[25px] h-[44px]'>

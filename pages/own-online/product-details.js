@@ -101,19 +101,11 @@ function ProductDetails() {
 
     const carImages = cardDetails ? cardDetails.imgSrc : null;
 
-    // contents configurations
-
-    const contents = [
-        {
-
-        }
-    ]
-
     return (
         <>
             <Head>
                 <title>Mahindra {cardDetails.title} Variant</title>
-                <meta name="description" content="Product Details" />
+                <meta name="description" content="Variant Product Details" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
@@ -155,7 +147,7 @@ function ProductDetails() {
                             <div className="sm:w-[425px] w-[280px] mx-auto sm:h-[343px] h-[160px] md:mt-0 mt-[5px]">
                                 {
                                     carImages &&
-                                    <Image width={425} height={343} src={carImages} alt="product-img" className='w-full h-full sm:object-contain object-cover' />
+                                    <Image width={425} height={343} src={carImages} alt="product-img" className='w-full max-w-[425px] h-full max-h-[343px] sm:object-contain object-cover' />
                                 }
                             </div>
                         </div>
