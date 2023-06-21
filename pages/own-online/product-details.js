@@ -46,25 +46,16 @@ function ProductDetails() {
 
     }, [router])
 
-    // cars seaters
     useEffect(() => {
+        // cars seaters
         setSeater(cardDetails.chooseSeaters)
-    }, [cardDetails.chooseSeaters])
-
-    // car types petrol or diesel
-    useEffect(() => {
+        // car types petrol or diesel
         setCarType(cardDetails.choosePetrolDiesel)
-    }, [cardDetails.choosePetrolDiesel])
-
-    // chooseTransmission
-    useEffect(() => {
+        // chooseTransmission
         setTransmission(cardDetails.chooseTransmission)
-    }, [cardDetails.chooseTransmission])
-
-    // color select
-    useEffect(() => {
+        // color select
         setColorChoise(cardDetails.colorChoose)
-    }, [cardDetails.colorChoose],)
+    }, [cardDetails.chooseSeaters, cardDetails.choosePetrolDiesel, cardDetails.chooseTransmission, cardDetails.colorChoose])
 
     const handleColorChange = (ele) => {
         setToggleColorChoise(ele.id);
@@ -80,10 +71,8 @@ function ProductDetails() {
 
     const handleChooseVariant = (id) => {
         setIsFirstActive(id)
-
         setIsContentShow(id);
     }
-
 
     useEffect(() => {
         setIsChooseVariant(cardDetails.chooseVariant)
@@ -153,7 +142,7 @@ function ProductDetails() {
                         </div>
                     </div>
                     {/* right side select configurations */}
-                    <div className="lg:w-[53%] w-full h-max lg:mb-0]">
+                    <div className="lg:w-[53%] w-full h-max lg:mb-0">
                         {/* tabs for fuel or diesel */}
                         <div className="w-full px-[4px]">
                             <div className="w-full">
